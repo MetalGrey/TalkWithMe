@@ -13,7 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/rounded_edit_text"
         android:ems="10"
@@ -22,7 +22,7 @@
         android:paddingLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/select_image_reg" />
 
     <EditText
         android:id="@+id/email_edittext_reg"
@@ -77,4 +77,19 @@
         app:layout_constraintEnd_toEndOf="@+id/register_button_reg"
         app:layout_constraintStart_toStartOf="@+id/register_button_reg"
         app:layout_constraintTop_toBottomOf="@+id/register_button_reg" />
+
+    <TextView
+        android:id="@+id/select_image_reg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_image_reg"
+        android:gravity="center"
+        android:text="Select Photo "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
